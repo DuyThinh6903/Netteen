@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL="SHORTCUT ICON"  HREF="images/social logo.png">
+    <title>Netteen</title>
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                Netteen
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Tìm kiếm trên Netteen">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Đăng</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg">
+                </div>
+                <!-- menu button to show sidebar -->
+                <button id="menu-btn"><i class="uil uil-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------- MAIN -------------------------->
+    <main>
+        <div class="container">
+            <!--======================== LEFT ==========================-->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Thành Xuân</h4>
+                        <p class="text-muted">
+                            @x.t1203
+                        </p>
+                    </div>
+                </a>
+
+                <!-- close button -->
+                <span id="close-btn"><i class="uil uil-multiply"></i></span>
+
+                <!-------------------- SIDEBAR ------------------------->
+                <div class="sidebar">
+                    <a class="menu-item" onclick="location.href='index.html'">
+                        <span><i class="uil uil-home"></i></span><h3>Trang chủ</h3>
+                    </a>
+                    <a class="menu-item" id="explores">
+                        <span><i class="uil uil-compass"></i></span><h3>Khám Phá</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Thông Báo</h3>
+                        <!-------------------- NOTIFICATION POPUP ---------------->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Thịnh Duy</b> đã chấp nhận lời mời kết bạn
+                                    <small class="text-muted">2 ngày trước</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Thức Trịnh</b> đã bình luận trên bài viết của bạn
+                                    <small class="text-muted">1 giờ trước</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-4.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Tiến Lê</b> và <b>283 người khác </b> đã thích bài viết của bạn
+                                    <small class="text-muted">4 phút trước</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-5.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Quý Văn</b> đã bình luận trên một bài viết mà bạn được gắn thẻ
+                                    <small class="text-muted">2 ngày trước</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-6.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Nghĩa Võ</b> đã bình luận trên một bài viết mà bạn được gắn thẻ
+                                    <small class="text-muted">1 giờ trước</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-7.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Hoàng Nguyễn</b> đã bình luận trên bài viết của bạn
+                                    <small class="text-muted">1 giờ trước</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------------- END NOTIFICATION POPUP ---------------->
+                    </a>
+                    <a class="menu-item" id="messages-notification">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span><h3>Tin Nhắn</h3>
+                    </a>
+                    <a class="menu-item active" onclick="location.href='tuvan.html'">
+                        <span><i class="uil uil-book-reader"></i></span><h3>Tư Vấn</h3>
+                    </a>
+                    <a class="menu-item" onclick="location.href='giaitri.html'">
+                        <span><i class="uil uil-keyboard-alt"></i></span><h3>Giải Trí</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="uil uil-palette"></i></span><h3>Chủ Đề</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span><h3>Cài Đặt</h3>
+                    </a>                        
+                </div>
+                <!------------------- END OF SIDEBAR -------------------->
+                <label for="create-post" class="btn btn-primary">Thêm Bài Viết</label>
+            </div>
+            <!------------------- END OF LEFT -------------------->
+
+
+
+            <!--======================== MIDDLE ==========================-->
+            <div class="middle">
+                <div class="m-contain">
+                    <div class="heading">
+                        <h4>Câu hỏi thường gặp</h4>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            Tuổi  dậy thì  là thế nào?
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" 
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p>Tuổi  dậy thì là mốc đánh dấu sự trưởng thành về mặt sinh học của cơ thể. Dậy thì là một quá trình thường kéo dài khoảng 3-4 năm và được chia làm 2 giai đoạn: giai đoạn tiền dậy thì và giai đoạn dậy thì hoàn toàn.<br>
+                            &bull; Theo Tổng cục DS - Bộ Y tế thì tuổi dậy thì của người Việt Nam vào độ tuổi từ 9 đến 14 tuổi (ở nữ) và 12 đến 15 tuổi (ở nam). Đối với người Việt Nam: trẻ em nữ dậy thì hoàn toàn vào khoảng 13-15 tuổi, đánh dấu bằng lần có kinh nguyệt đầu tiên.Trẻ en nam dậy thì hoàn toàn vào khoảng 14-16 tuổi, đánh dấu bằng lần xuất tinh không chủ định đầu tiên.<br>
+                            &bull; Ở tuổi dậy thì, dưới tác dụng sinh lý của tuyến hóc môn, cơ thể trẻ em diễn ra hàng loạt những thay đổi về hình dáng, tâm sinh lý, cơ quan sinh dục, phân biệt rõ giới tính nam/nữ và bắt đầu có khả năng tình dục, khả năng sinh sản.
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            Tuổi dậy thì nam và nữ có phải là tuổi “nổi loạn” không?
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" 
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p>&bull; Tuổi dậy thì là tuổi “khó bảo”, “có lớn mà chưa có khôn” vì vậy, mọi người quan niệm là “ tuổi nổi loạn”
+                            <br>
+                            &bull; Nguyên nhân chủ yếu do chất Adrenalin trong cơ thể tăng lên, làm tim đập nhanh, làm tăng huyết áp, dễ dẫn đến hành vi bột phát, thiếu suy nghĩ chín chắn. Chính vì vậy, ở lứa tuổi các em cần rèn luyện tính tự chủ, tham gia các hoạt động thể thao, văn nghệ  giúp  tinh thần thoải mái</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            Tình bạn ở tuổi vị thành niên và đặc điểm của nó là thế  nào?
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" 
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p>&bull; Tình bạn ở tuổi VTN là một loại tình cảm gắn bó hai hoặc nhiều người (cùng hoặc khác giới) trên cơ sở hợp nhau về tính tình, giống nhau về sở thích và cùng một quan niệm sống, ý tưởng, ước mơ…<br>
+                            &bull; Đặc điểm của tình bạn ở tuổi VTN là:<br>
+                            &emsp;- Nhu cầu tình bạn phát triển mạnh mẽ, tình bạn dựa trên các yếu tố: hợp nhau về tính tình, sở thích, lối sống, cùng lớp, cùng trường…<br>
+                            &emsp;- Tình bạn thường trong sáng, chân thành; khi kết bạn, VTN thường bị chi phối nhiều bởi yếu tố tình cảm nên sự can thiệp của lý tính khi lựa chọn bạn không cao.<br>
+                            &emsp;- Trong tình bạn khác giới, VTN coi đối tượng là yếu tố để tự hoàn thiện mình và cũng hay ngộ nnhận tình bạn thân thiết là tình yêu.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            Dấu hiệu của tình bạn tốt và không tốt trong độ tuổi VTN là thế nào?
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" 
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p>&bull; Dấu hiệu của tình bạn tốt là: có trách nhiệm, giúp nhau trong học tập, rèn luyện đạo đức, lao động để cùng tiến bộ; cùng chí hướng, lý tưởng, quan điểm; hứng trhú, sở thích phù hợp với chuẩn mực đạo đức của xã hội; bình đẳng và tôn trong nhau; chân thành , tin cậy, thông cảm sâu sắc với nhau; Có thể kết bạn với nhiều người 1 lúc không làm giảm mức độ gắn bó sâu sắc trong nhóm bạn thân.<br>
+                            &bull; Dấu hiệu của  tình bạn không tốt là: luôn gen gét, đố kỵ, nói xấu; trong quan hệ bạn bè thiếu sự chân thành, có thái độ trịch thượng, thiếu bình đẳng; luôn trốn học, bè phái; tụ tập lôi kéo nhau tham gia vào các tệ nạn xã hội ( uống rượu , hút thuốc lá, sử dụng ma tuý, chơi điện tử, cờ bạc…); bao che khuyết điểm cho nhau; lấy cắp tiền của cha mẹ để  tiêu sài, chơi bời lêu lổng...</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            Có tồn tại một tình bạn khác giới và có nên kết bạn khác giới không?
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" 
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p>&bull; Có tồn tại tình bạn khác giới; việc trao đổi tâm tư, tình cảm, hoài bão, ước mơ và dự định trong cuộc sống giữa  những người tuổi trẻ khác giới là 1 nhu cầu khách quan, cần cho sự phát triển nhân cách hài hoà của bản thân mỗi giới<br>
+                            &bull; Rất nên kết bạn khác giới; vì trong tình bạn khác giới, mỗi bên đều coi giới kia như 1 yếu tố để tự hoàn thiện mình; tình bạn khác giới làm cho người bạn trai mong muốn có những phẩm chất của “đấng nam nhi” và cũng làm cho người bạn gái mong muốn có những phẩm chất hiền dịu, nữ tính của “phái nữ”.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            Tình bạn khác giới có gì giống và khác với tình bạn cùng giới và có phải tình bạn khác giới thường dẫn đến tình yêu hay không?
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" 
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p>&bull; Tình bạn khác giới cũng giống như tình bạn cùng giới đều là một loại tình cảm gắn bó giữa  hai hoặc nhiều người có chung sở thích, hợp nhau về tính tình, quan điểm sống, lý tưởng, ước mơ hoài bão...<br>
+                            &bull; Tình bạn khác giới khác với tình bạn cùng giới: trong tình bạn, mỗi người đều coi giới kia như một yếu tố để tự hoàn thiện mình như trong quan hệ bạn gái luôn tỏ ra dịu dàng, ý tứ, còn bạn trai thường tỏ ra lịch sự, đàng hoàng, đĩnh đặc hơn; Giữa 2 người bạn khác giới luôn có 1 “khoảng cách” tế nhị hơn so với tình bạn cùng giới, không dễ dàng gần gũi, suồng sã như bạn cùng giới<br>
+                            &bull; Trong những điều kiện nhất định của sự phát triển của tình bạn, tình bạn  khác giới có thể chuyển thành tình yêu, song không phải mọi tình bạn khác giới đều dẫn đến tình yêu</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            Tại sao lại cần xác định giới hạn của tình bạn khác giới và những điều cần  tránh trong tình bạn khác giới?
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" 
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p>&bull; Cần nhận thức đúng đắn những đặc điểm của tình bạn khác giới và biết xác định giới hạn cần thiết trong cách đối xử hàng ngày là điều kiện quan trọng để xây dựng và duy trì tình bạn khác giới lành mạnh ở tuổi học trò<br>
+                            &bull; Những điều cần tránh trong tình bạn khác giới ở tuổi VTN: tránh đối xử suồng sã, thiếu tế nhị; tránh gán gép lẫn  nhau trong quan hệ bạn bè khác giới; tránh gen gét nói xấu, đối xử thô bạo với nhau khi thấy bạn mình có thêm bạn khác giới; tránh ngộ nhận tình bạn khác giới là tình yêu; tránh thái độ mập mờ gây cho bạn khác giới hiểu lầm là tình yêu.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            Tình bạn có vai trò quan trọng như thế nào? và trong quan hệ bạn bè cần tránh những điều gì?
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" 
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p>&bull; Tình bạn đúng đắn sẽ là một sức mạnh tinh thần giúp mỗi người tiến bộ, hoàn thiện nhân cách của mình và trưởng thành về mọi mặt. trong quan hệ bạn bè, mọi người thường tự đánh giá bản thân, so sánh mình với những người bạn khác đẻ nỗ lực phấn đấu không tụt hậu hoặc thua kém bạn, tự giáo dục và hoàn thiện nhân cách của mình <br>
+                            <br>
+                            &bull; Trong quan hệ bạn bè cần tránh: tránh kết bạn trên cơ sở có chung xu hướng tiêu cực; đi ngược lại với lợi ích và giá trị đạo đức của  xã hội, tập thể, gây tác hại cho xã hội, tập thể; tránh bao che khuyết điểm cho nhau; tránh ích kỷ, tránh vụ lợi trong quan hệ bạn bè; đồng thời tránh “kéo bè, kéo cánh”, cục bộ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="anotherques">
+                    <div class="heading">
+                        <h4>Đặt câu hỏi cho chuyên gia</h4>
+                    </div>
+                    <form class="create-consulting">
+                        <div class="profile-photo">
+                            <img src="./images/profile-1.jpg">
+                        </div>
+                        <div class="consulting">
+                            <textarea placeholder="Viết câu hỏi của bạn"></textarea>
+                            <input type="submit" value="Gửi" class="btn-consulting">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <!--======================== END OF MIDDLE ==========================-->
+
+
+            <!--======================== RIGHT ==========================-->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Tin Nhắn</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <!------------ SEARCH BAR -------------->
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Tìm kiếm tin nhắn" id="message-search">
+                    </div>
+                    <!------------ MESSAGES CATEGORY -------------->
+                    <div class="category">
+                        <h6 class="active">Gần đây</h6>
+                        <h6>Nhóm</h6>
+                        <h6 class="message-requests">Yêu cầu(7)</h6>
+                    </div>
+                    <!------------ MESSAGE -------------->
+                    <!----- MESSAGE ----->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Thịnh Duy</h5>
+                            <p class="text-muted">Dậy đi bro</p>
+                        </div>
+                    </div>
+                    <!----- MESSAGE ----->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Thức Trịnh</h5>
+                            <p class="text-bold">Nhận đc rồi nha. Cảm ơn nhiều</p>
+                        </div>
+                    </div>
+                    <!----- MESSAGE ----->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Tiến Lê</h5>
+                            <p class="text-bold">ok</p>
+                        </div>
+                    </div>
+                    <!----- MESSAGE ----->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-5.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Quý Văn</h5>
+                            <p class="text-bold">2 tin nhắn mới</p>
+                        </div>
+                    </div>
+                    <!----- MESSAGE ----->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-6.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Nghĩa Võ</h5>
+                            <p class="text-muted">à vậy thôi nha, cảm ơn</p>
+                        </div>
+                    </div>
+                    <!----- MESSAGE ----->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-7.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Hoàng Nguyễn</h5>
+                            <p class="text-bold">:)))</p>
+                        </div>
+                    </div>
+                </div>
+                <!------------ END OF MESSAGES -------------->
+
+
+                <!------------ FRIEND REQUESTS -------------->
+                <div class="friend-requests">
+                    <h4>Yêu Cầu</h4>
+                    <!----- REQUEST 1----->
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-21.jpg">
+                            </div>
+                            <div>
+                                <h5>Khánh Bảo Trần</h5>
+                                <p class="text-muted" style="font-size: 14px">8 bạn chung</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" style="font-size: 0.7rem">Chấp nhận</button>
+                            <button class="btn" style="font-size: 0.7rem">Từ chối</button>
+                        </div>
+                    </div>
+                    <!----- REQUEST 2----->
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-22.jpg">
+                            </div>
+                            <div>
+                                <h5>Nguyễn Việt Hà</h5>
+                                <p class="text-muted" style="font-size: 14px">2 bạn chung</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" style="font-size: 0.7rem">Chấp nhận</button>
+                            <button class="btn" style="font-size: 0.7rem">Từ chối</button>
+                        </div>
+                    </div>
+                    <!----- REQUEST 3----->
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-23.jpg">
+                            </div>
+                            <div>
+                                <h5>Nguyễn Quốc Đức</h5>
+                                <p class="text-muted" style="font-size: 14px">19 bạn chung</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" style="font-size: 0.7rem">Chấp nhận</button>
+                            <button class="btn" style="font-size: 0.7rem">Từ chối</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--====================== END OF RIGHT ==========================-->
+        </div>
+    </main>
+
+ <!--================================================ EXPLORE =============================================-->
+ <div class="explore-modal">
+    <div class="explore-card">
+        <div class="explore-previous">
+            <i class="uil uil-angle-left"></i>
+        </div>
+        <div class="explore-content">
+            <div class="explore-profile">
+                <img src="./images/explore.gif">
+                <p>Nghĩa Võ</p>
+                <div class="explore-status">
+                    <i class="uil uil-pause"></i>
+                    <i class="uil uil-volume"></i>
+                    <i class="uil uil-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="explore-popup">
+                <img src="./images/explore.gif">
+            </div>
+        </div>
+        <div class="explore-next">
+            <i class="uil uil-angle-right"></i>
+        </div>
+    </div>
+</div>
+
+<script src="./index.js"></script>
+<script type="text/javascript">
+    const explores = document.querySelector('#explores');
+    const exploreModal = document.querySelector('.explore-modal');
+
+    const openExModal = () => {
+    exploreModal.style.display = 'grid';
+    }   
+
+    // closes modal
+    const closeExModal = (e) => {
+        if(e.target.classList.contains('explore-modal')){
+            exploreModal.style.display = 'none';
+        }
+    }
+
+    // close modal
+    exploreModal.addEventListener('click', closeExModal);
+
+    explores.addEventListener('click', openExModal);
+</script>
+</body>
+</html>
