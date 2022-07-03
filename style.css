@@ -154,7 +154,7 @@ main .container {
 /* =================== LEFT ================ */
 main .container .left {
   height: max-content; 
-  height: 180vh;
+  height: 100vh;
   position: sticky;
   top: var(--sticky-top-left); 
 }
