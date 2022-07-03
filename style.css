@@ -907,7 +907,7 @@ main .container .right {
   font-size: 3rem;
   border-radius: 50%;
   color: var(--color-light);
-  background-color: var(--color-gray);
+  background-color: var(--color-dark);
 }
 
 /* ==========================
